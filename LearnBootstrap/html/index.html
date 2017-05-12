@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>学习Bootstrap</title>
+	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<style>
+	.test{
+		height: 200px;
+		background-color: #ccc;
+	}
+	</style>
+</head>
+<body>
+<div class="container col-lg-7 col-lg-offset-2">
+	<!-- 巨幕 -->
+	<div class="jumbotron col-lg-12">
+	  <h1>Hello, GSW!</h1>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A harum atque eaque natus consequatur exercitationem, consequuntur veritatis in cumque magnam velit distinctio libero voluptate culpa ipsam accusantium. Non, ipsa, amet.</p>
+	  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+	</div>
+
+
+	<!-- 语义标签 -->
+	<h1>gongshangwen<small>gsw</small></h1>
+	<p class="h1">gongshangwen<span class="small">gsw</span></p>
+
+	<!-- 突出段落 -->
+	<p class="lead">Lorem ipsum <u>dolor sit amet</u>, <b>consectetur adipisicing elit</b>. <i>Dignissimos</i> nihil eum <del>minus id doloribus quam numquam</del> illo dicta tempore amet explicabo necessitatibus reprehenderit quas labore, <mark>corrupti dolores quae</mark> natus dolorem.</p>
+
+	<!-- 响应栅格系统 默认12列-->
+	<!-- 超大屏1/4 大屏1/3 平板1/2 手机全屏 左边距屏幕的1/6-->
+	<div class="test col-lg-3 col-md-4 col-sm-6 col-xs-12 col-lg-offset-2"></div>
+
+	<!-- 文本对齐 -->
+	<p class="text-left">Left aligned text.</p>
+	<p class="text-center">Center aligned text.</p>
+	<p class="text-right">Right aligned text.</p>
+
+	<!-- 大小写转换 -->
+	<p class="text-lowercase">Lowercased text.</p>
+	<p class="text-uppercase">Uppercased text.</p>
+	<p class="text-capitalize">Capitalized text.</p>
+
+	<!-- 首字母缩略语 -->
+	<p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread.</p>
+	<!-- 描述 -->
+	<dl class="col-lg-6 col-md-6 col-sm-12">
+		<dt>Description lists</dt>
+		<dd>A description list is perfect for defining terms.</dd>
+		<dt>Euismod</dt>
+		<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+			Donec id elit non mi porta gravida at eget metus.</dd>
+		<dt>Malesuada porta</dt>
+		<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+	</dl>
+	<dl class="dl-horizontal col-lg-6 col-md-6 col-sm-12">
+		<dt>Description lists</dt>
+		<dd>A description list is perfect for defining terms.</dd>
+		<dt>Euismod</dt>
+		<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+			Donec id elit non mi porta gravida at eget metus.</dd>
+		<dt>Malesuada porta</dt>
+		<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+	</dl>
+
+	<!-- 表格 -->
+	<!-- 条纹状表格 带边框的表格 鼠标悬停 紧缩表格（单元格中的内补（padding）均会减半） -->
+	<table class="table table-striped table-bordered table-hover table-condensed" >
+		<thead>
+			<tr>
+				<th>标题</th>
+				<th>标题</th>
+				<th>标题</th>
+				<th>标题</th>
+				<th>标题</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="danger">
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="warning">
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="info">
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="success">
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="active">
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<!-- 表单 -->
+	<!-- 一定要添加label标签 -->
+	<form>
+	  <div class="form-group">
+	    <label for="exampleInputEmail1" class="sr-only">Email address</label>
+	    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email （设置了label的sr-only属性）">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputPassword1">Password</label>
+	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputFile">File input</label>
+	    <input type="file" id="exampleInputFile">
+	    <p class="help-block">Example block-level help text here.</p>
+	  </div>
+	  <div class="checkbox">
+	    <label>
+	      <input type="checkbox"> Check me out
+	    </label>
+	  </div>
+	  <button type="submit" class="btn btn-default">Submit</button>
+	</form>
+
+	<!-- 水平排列 -->
+	<form class="form-horizontal">
+		<div class="form-group">
+		  <label for="exampleInputEmail1" class="col-xs-2 control-label">Email address</label>
+		  <div class="col-xs-10">
+			  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+		  </div>
+		</div>
+		<div class="form-group">
+		  <label for="exampleInputPassword1" class="col-xs-2 control-label">Password</label>
+		  <div class="col-xs-10">
+			  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		  </div>
+		</div>
+	</form>
+
+	<!-- <input type="tel" class="col-xs-6" style="width: 50%" placeholder="control">
+	<input type="tel" class="col-xs-6 bg-primary" style="width: 50%">
+	<input type="tel" class="col-xs-6" style="width: 50%">
+	<input type="tel" class="col-xs-6" style="width: 50%"> -->
+
+
+	<!-- 校验表单 -->
+	<form class="form-horizontal">
+	  <div class="form-group has-success has-feedback">
+	    <label class="control-label col-sm-3" for="inputSuccess3">Input with success</label>
+	    <div class="col-sm-9">
+	      <input type="text" class="form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+	      <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+	      <span id="inputSuccess3Status" class="sr-only">(success)</span>
+	    </div>
+	  </div>
+	  <div class="form-group has-success has-feedback">
+	    <label class="control-label col-sm-3" for="inputGroupSuccess2">Input group with success</label>
+	    <div class="col-sm-9">
+	      <div class="input-group">
+	        <span class="input-group-addon">@</span>
+	        <input type="text" class="form-control" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
+	      </div>
+	      <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+	      <span id="inputGroupSuccess2Status" class="sr-only">(success)</span>
+	    </div>
+	  </div>
+	</form>
+
+	<!-- 辅助类  关闭 -->
+	<div class="col-xs-3 pull-right">
+		<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	</div>
+	<div class="col-xs-3 pull-right">
+		<span class="caret center-block" style="float: right;"></span>
+	</div>
+</div>
+	<script src="../js/jquery.js"></script>
+	<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
